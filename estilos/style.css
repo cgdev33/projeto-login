@@ -10,26 +10,26 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 0px;
     margin: 0px;
-    box-sizing: border-box;
+    box-sizing: border-box;/*borda*/
 }
 
 body, html {
-    background-color: #5f2c82;
-    height: 100vh;
+    background-color: #5f2c82;/*cor de fundo*/
+    height: 100vh;/*100% da tela*/
     width: 100vw;
 }
 
 main {
     position: relative;
-    height: 100vh;
+    height: 100vh;/*também com 100%*/
     width: 100vw;
 }
 
 section#login {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    overflow: hidden;
+    position: absolute;/*botar no meio da tela independente da resolução*/
+    top: 50%;/*botar no meio da tela*/
+    left: 50%;/*botar no meio da tela*/
+    overflow: hidden;/*tudo que fica fora da borda fica escondido*/
 
     background-color: white;
     width: 250px;
@@ -38,8 +38,8 @@ section#login {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
 
     transform: translate(-50%, -50%);
-    transition: width .3s, height .3s;
-    transition-timing-function: ease;
+    transition: width .3s, height .3s;/*a imagem muda*/
+    transition-timing-function: ease;/*suavisa a troca da imagem quanndo cresce a tela*/
 }
 
 section#login > div#imagem {
@@ -47,12 +47,12 @@ section#login > div#imagem {
     background: #5f2c82 url(../imagem/281831.jpg) no-repeat;
     background-size: cover;
     background-position: left bottom;
-    height: 200px;
+    height: 200px;/*para aperecer a imagem*/
 }
 
 section#login > div#formulario {
     display: block;
-    padding: 10px;
+    padding: 10px;/*separar das bordas*/
 }
 
 div#formulario > h1 {
