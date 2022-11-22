@@ -71,25 +71,25 @@ form > div.campo {
     width: 100%;
     height: 40px;
     border-radius: 8px;
-    margin: 5px 0px;
+    margin: 5px 0px;/*margem em cima e em baixo 5px, da direita e da esquerda 0px*/
 }
 
 div.campo > label {
-    display: none;
+    display: none;/*retira as palavras login e senha*/
 }
 
-div.campo > i {
+div.campo > i {/*configuração do ícone*/
     color: white;
-    /*background-color: black;*/
+    /*background-color: black; deve ser removido*/
     font-size: 1.9em;
     width: 40px;
     padding: 5px;
 }
 
-div.campo > input {
+div.campo > input {/*configuração das caixas*/
     background-color: #94cfcd;
     font-size: 1em;
-    width: calc(100% - 45px);
+    width: calc(100% - 45px);/*função calculo em CSS é 100% - 45%, para encaixar*/
     height: 100%;
     border: 0px;
     border-radius: 8px;
@@ -97,40 +97,40 @@ div.campo > input {
     transform: translateY(-10px);
 }
 
-div.campo > input:focus-within {
+div.campo > input:focus-within {/*ganhar foco quando estiver digitando*/
     background-color: white;
     border: none;
 }
 
-form > input[type=submit] {
-    display: block;
+form > input[type=submit] {/*formatar o botão de submit*/
+    display: block;/*ele fica em uma única linha*/
     font-size: 1em;
-    width: 100%;
+    width: 100%;/*não pode ser 100vw porque não é a largura total, mas apenas a de dentro do conteúdo (conteiner)*/
     height: 40px;
     background-color: #53aaa7;
     color: white;
-    border: none;
+    border: none;/*retirar a borda*/
     border-radius: 5px;
     cursor: pointer;
 }
 
-form > input[type=submit]:hover {
+form > input[type=submit]:hover {/*interação do mouse*/
     background-color: #2d6462;
 }
 
-form > a.botao {
+form > a.botao {/*o 'link' da 'class botão' que esta dentro do 'form'*/
     display: block;
     text-align: center;
     font-size: 1em;
     width: 100%;
     height: 40px;
     padding-top: 5px;
-    margin-top: 5px;
+    margin-top: 5px;/*separar os botões*/
     background-color: white;
     color: #2d6462;
     border: 1px solid #49a09d;
     border-radius: 7px;
-    text-decoration: none;
+    text-decoration: none;/*retirar o sublinhado*/
 }
 
 form > a.botao:hover {
